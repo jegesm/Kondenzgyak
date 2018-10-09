@@ -15,9 +15,26 @@
    version="1.1"
    id="svg4508"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="cellabamutatonyil.svg">
+   sodipodi:docname="cellabamutatonyil.svg"
+   inkscape:export-filename="/home/jegesm/Dropbox/Oktatas/2018-19-kondanyf17ga/Kondenzgyak/images/cellabamutatonyil.svg.png"
+   inkscape:export-xdpi="87"
+   inkscape:export-ydpi="87">
   <defs
      id="defs4502">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5360"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
     <marker
        inkscape:stockid="Arrow1Sstart"
        orient="auto"
@@ -125,7 +142,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="56.739744"
+     inkscape:cx="22.45403"
      inkscape:cy="627.42878"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -180,33 +197,33 @@
        y="61.968876"
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.946;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS);marker-end:url(#Arrow1Send)"
-       d="M 35.52976,106.5 81.405098,61.968876"
+       style="fill:none;stroke:#000000;stroke-width:0.94599998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS);marker-end:url(#Arrow1Send)"
+       d="M 54.371211,119.68796 81.41053,61.753151"
        id="path5352"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="44.147621"
-       y="78.832153"
+       x="46.415478"
+       y="108.69228"
        id="text5644"><tspan
          sodipodi:role="line"
          id="tspan5642"
-         x="44.147621"
-         y="78.832153"
+         x="46.415478"
+         y="108.69228"
          style="stroke-width:0.26458332">R<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan5646">n</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="32.279167"
-       y="118.36845"
+       x="56.091667"
+       y="130.46368"
        id="text5688"><tspan
          sodipodi:role="line"
          id="tspan5686"
-         x="32.279167"
-         y="118.36845"
+         x="56.091667"
+         y="130.46368"
          style="stroke-width:0.26458332">0</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.946;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart)"
@@ -242,5 +259,21 @@
          x="104.29467"
          y="42.971622"
          style="stroke-width:0.26458332;fill:#aa0000;">r'</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       d="M 106.96726,50.937498 54.37121,119.68796"
+       id="path6919"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="89.958336"
+       y="84.577377"
+       id="text6985"><tspan
+         sodipodi:role="line"
+         id="tspan6983"
+         x="89.958336"
+         y="84.577377"
+         style="stroke-width:0.26458332">r</tspan></text>
   </g>
 </svg>
