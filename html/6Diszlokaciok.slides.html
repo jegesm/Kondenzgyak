@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>2Gyakorlathoz slides</title>
+<title>6Diszlokációk slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11905,12 +11905,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Krist&#225;lyos-szerkezet">Krist&#225;lyos szerkezet<a class="anchor-link" href="#Krist&#225;lyos-szerkezet">&#182;</a></h3><p>(Ismétlés)</p>
-<p><strong>Bravais-rács</strong>:</p>
-<p>$\mathbf{R}_n=n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3$, ahol $n_1$, $n_2$, $n_3 \in \mathbb{Z}$</p>
-<p><strong>Bázis</strong>: N db atom</p>
-<p><strong>Elemi cella</strong></p>
-<p><strong>Bravais cella</strong></p>
+<h2 id="Diszlok&#225;ci&#243;">Diszlok&#225;ci&#243;<a class="anchor-link" href="#Diszlok&#225;ci&#243;">&#182;</a></h2><p>Külső erő hatására az atomi oszlopok darabonként helyezkednek át, nem egyszerre csúszik el az egész sík.
+<img src="../images/Sheardisloc.png"></p>
 
 </div>
 </div>
@@ -11919,32 +11915,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$\mathbf{a_1}$, $\mathbf{a_2}$, $\mathbf{a_3}$ elemi rácsvektorok átírva $\mathbf{\hat{x}}$, $\mathbf{\hat{y}}$, $\mathbf{\hat{z}}$ egységvektorok által kifeszített derékszögű koordináta-rendszerben:
-$ a_i= a_{ix}\mathbf{\hat{x}} + a_{iy}\mathbf{\hat{y}} + a_{iz}\mathbf{\hat{z}}$
-<img src="../images/2coordsys.png" width="300"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$ a_i= a_{ix}\mathbf{\hat{x}} + a_{iy}\mathbf{\hat{y}} + a_{iz}\mathbf{\hat{z}}$
-$\begin{align} a_i =  \begin{pmatrix} a_{ix}\\a_{iy} \\ a_{iz} \end{pmatrix}  \end{align}$ 
-$\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp; a_{2y} &amp; a_{3y} \\ a_{1z} &amp; a_{2z} &amp; a_{3z} \end{pmatrix}  \end{align}$</p>
-<h3 id="Az-elemi-cella-t&#233;rfogata">Az elemi cella t&#233;rfogata<a class="anchor-link" href="#Az-elemi-cella-t&#233;rfogata">&#182;</a></h3><p>$V = \mathbf{a_1} \cdot (\mathbf{a_2}\times \mathbf{a_3)}$</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp; a_{2y} &amp; a_{3y} \\ a_{1z} &amp; a_{2z} &amp; a_{3z} \end{pmatrix}\end{align}$</p>
-<p>$\mathbf{R}_n=n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3$</p>
-<p>$\mathbf{R}_n=n_1 \begin{pmatrix} a_{1x}\\a_{1y} \\ a_{1z} \end{pmatrix} + n_2\begin{pmatrix} a_{2x}\\a_{2y} \\ a_{2z} \end{pmatrix} + n_3\begin{pmatrix} a_{3x}\\a_{3y} \\ a_{3z} \end{pmatrix} = A\cdot \begin{pmatrix} n_{1}\\n_{2} \\ n_{3} \end{pmatrix}$</p>
+<h3 id="Burgers-vektor">Burgers vektor<a class="anchor-link" href="#Burgers-vektor">&#182;</a></h3><ul>
+<li>Éldiszlokáció esetén</li>
+</ul>
+<p>$$e_l \bot b$$
+<img src="../images/eldiszlokuj.png" width="300em"></p>
 
 </div>
 </div>
@@ -11953,13 +11928,10 @@ $\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reciprok-r&#225;cs">Reciprok r&#225;cs<a class="anchor-link" href="#Reciprok-r&#225;cs">&#182;</a></h2><p>Az $A$ mátrixhoz definiálunk egy $B$ mátrixot úgy, hogy $BA = AB = 2\pi I$. Ekkor $B$ a reciproktérbeli elemi rácsvektorokat tartalmazza.</p>
-<p>$\begin{align} B =  \begin{pmatrix} b_{1x} &amp; b_{1y}&amp; b_{1z}\\b_{2x} &amp; b_{2y} &amp; b_{2z} \\ b_{3x} &amp; b_{3y} &amp; b_{3z} \end{pmatrix}\end{align}$ $\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp; a_{2y} &amp; a_{3y} \\ a_{1z} &amp; a_{2z} &amp; a_{3z} \end{pmatrix}\end{align}$</p>
-<p>A definícióból következik:
-$\mathbf{a}_i \mathbf{b}_i = 2\pi\delta_ij$</p>
-<p>Egy reciprok rács: $\mathbf{G}=h_1\mathbf{b}_1 + h_2\mathbf{b}_2 + h_3\mathbf{b}_3$, ahol $h_1$, $h_2$, $h_3 \in \mathbb{Z}$</p>
-<p>$b_i$ reciproktérbeli rácsvektor merőleges két elemi rácsvektorra:
-$$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}_2\times\mathbf{a}_3)}$$</p>
+<ul>
+<li>Csavar diszlokáció esetén</li>
+</ul>
+<p>$$e_l \parallel b$$</p>
 
 </div>
 </div>
@@ -11968,18 +11940,7 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">Sz&#225;moljuk ki a graf&#233;n reciprokr&#225;cs vektorait!<a class="anchor-link" href="#Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">&#182;</a></h3><p>$\begin{align} A =  \begin{pmatrix} \frac{\sqrt{3}}{2} &amp; -\frac{\sqrt{3}}{2} \\  \frac{3}{2} &amp; \frac{3}{2}  \end{pmatrix} a_0\end{align}$</p>
-<p><img src="../images/2graphbrilfel.png" width="400"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">Sz&#225;moljuk ki a graf&#233;n reciprokr&#225;cs vektorait!<a class="anchor-link" href="#Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">&#182;</a></h3><p>$\begin{align} A =  a_0 \begin{pmatrix} \frac{\sqrt{3}}{2} &amp; -\frac{\sqrt{3}}{2} \\  \frac{3}{2} &amp; \frac{3}{2}  \end{pmatrix}\end{align}$ $\begin{align} B =  \frac{2\pi}{a_0}\begin{pmatrix} \frac{2\pi}{\sqrt{3}} &amp; \frac{2\pi}{3} \\  -\frac{2\pi}{\sqrt{3}} &amp; \frac{2\pi}{3}  \end{pmatrix}\end{align}$ 
-<img src="../images/2graphbril.png" width="700"></p>
+<p><img src="../images/Disloc.png" width="400em"></p>
 
 </div>
 </div>
@@ -11988,16 +11949,11 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="A-reciprokt&#233;r-Wigner-Seitz-cell&#225;ja-a-Brillouin-cella">A reciprokt&#233;r <strong>Wigner Seitz</strong> cell&#225;ja a <strong>Brillouin</strong> cella<a class="anchor-link" href="#A-reciprokt&#233;r-Wigner-Seitz-cell&#225;ja-a-Brillouin-cella">&#182;</a></h2>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Számoljuk ki az egyszerű köbös rács reciprokrács vektorait!</strong>
-<img src="../images/simple_cubic_lattice.png" width="800"></p>
+<p><img src="../images/eldiszlok.png" width="400px">
+Egy felületre ható $\mul{F}$ erő iránya nem feltétlenül párhuzamos a felület $\Delta \mul{A}$ normálisával. Közöttük a $\mul{\underline{\sigma}}$ feszültségtenzor adja meg az arányosságot:</p>
+<ul>
+<li>$\mul{\underline{\sigma}}$ szimmetrikus tenzor.</li>
+</ul>
 
 </div>
 </div>
@@ -12006,105 +11962,89 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Számoljuk ki az BCC rács reciprokrács vektorait!</strong></p>
-<p><img src="../images/body-centered_cubic_lattice.png" width="800"></p>
+<p><img src="../images/dAfelulet.png" width="200px"></p>
+<p>A felület kifejezhető $\Delta \mul{A}=\mul{s}\times{\mul{l}}$, ahol $\Delta \mul{A}$ párhuzamos a felület normálisával.
+A felület nagysága ennek az abszolút értéke.</p>
+<p>Az erő, ami $\mul{A}$ felületre hat:
+$$\mul{F}_\mul{A}=\mul{\underline{\sigma}}\Delta \mul{A}=\mul{\underline{\sigma}}(\mul{s}\times{\mul{l}})$$</p>
 
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
-<span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="k">import</span> <span class="n">det</span>
-<span class="kn">import</span> <span class="nn">scipy.linalg</span> <span class="k">as</span> <span class="nn">lin</span>
-
-<span class="n">A</span> <span class="o">=</span> <span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span><span class="o">/</span><span class="mi">2</span>
-<span class="c1"># A-t transzponálni kell, de a kettő megegyezik</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">lin</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>-0.25
-[[ 1.  1. -1.]
- [ 1. -1.  1.]
- [-1.  1.  1.]]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Kit&#246;lt&#233;si-t&#233;nyez&#337;-(Atomic-packing-factor)">Kit&#246;lt&#233;si t&#233;nyez&#337; (Atomic packing factor)<a class="anchor-link" href="#Kit&#246;lt&#233;si-t&#233;nyez&#337;-(Atomic-packing-factor)">&#182;</a></h2><p>$P=\frac{N_{részecske}V_{részecske}}{V_{cella}}$ <img src="../images/2agyugolyok.jpg" width="250">
-<img src="../images/2ferrero.jpg" width="250"></p>
+<p><img src="../images/eldiszlok2koord.png" width="200px"></p>
+<p>Ha a feszültség tenzor csak egy darab nyíró tagot tartalmaz: $\begin{align} \mul{\underline{\sigma}} =  \begin{pmatrix} 0 &amp; 0 &amp; \tau \\ 0 &amp; 0 &amp; 0 \\ \tau &amp; 0 &amp; 0 \end{pmatrix},  \end{align}$ ahol $\tau = \sigma_{xz} = \sigma_{zx} $</p>
+<p>$$|\mul{F}_\mul{A}|=ls\tau$$</p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">interactive</span><span class="p">(</span><span class="n">plot_shift</span><span class="p">,</span> <span class="n">alter</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A munka amit végezni kell $\mul{A}$ felületen</p>
+<p>$W_\mul{A} = |\mul{F}_\mul{A}| |\mul{b}| = lsb\tau$</p>
+<p>Ezzel szemben, ha a diszlokáción végzünk munkát, vagyis eltoljuk $s$ távolságra:</p>
+<p>$W_\mul{b} = |\mul{F}_\mul{b}| s $</p>
+<p>Ebből következik, hogy</p>
+<p>$$|\mul{F}_\mul{b}|=l\mul{b}\tau$$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#193;ltal&#225;nosan-v&#233;ve">&#193;ltal&#225;nosan v&#233;ve<a class="anchor-link" href="#&#193;ltal&#225;nosan-v&#233;ve">&#182;</a></h3><p>$\mul{F}_\mul{A}=\mul{\underline{\sigma}}(\mul{s}\times\mul{l})$</p>
+<p>$W_\mul{A} = \mul{F}_\mul{A}\mul{b}=\left[ \mul{\underline{\sigma}}(\mul{s}\times\mul{l}) \right]\mul{b}$</p>
+<p>$W_\mul{A} = \sum_{lijk}\sigma_{li}\epsilon_{ijk}s_j l_k b_l$</p>
+<p>Cseréljük fel a tagokat:</p>
+<p>$= \sum_{ijk}\epsilon_{ijkl} s_j l_k \sigma_{li} b_l  = \sum_{ijk}\epsilon_{jki} l_k(\mul{\underline{\sigma}}\mul{b})_i s_j$</p>
+<p>$W_\mul{A} = \mul{F}_\mul{A}\mul{b}=\left[ \mul{l}\times(\mul{\underline{\sigma}}\mul{b}) \right]\mul{s}$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$W_\mul{A} = \mul{F}_\mul{A}\mul{b}=\left[ \mul{l}\times(\mul{\underline{\sigma}}\mul{b}) \right]\mul{s}$</p>
+<p>Így adódik a diszlokáción végzett munkából a diszlokációra hat erő:</p>
+<p>$W_\mul{b} = \mul{F}_\mul{b}\mul{s} --&gt; \mul{F}_\mul{b} = \mul{l}\times(\mul{\underline{\sigma}}\mul{b})$</p>
+<p>Ez a Peach-Koehler formula. Az erő merőleges a diszlokációs vektor irányára.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Határozzuk  meg  az ábrán látható  két  párhuzamos  éldiszlokáció  között  ható  (egységnyi hosszra  jutó)  erőt!  Az (1) diszlokáció  a z-tengelyen  található,  a (2)-es  pedig  az (x, y) pontban metszi az x-y síkot. A diszlokációk Burgers-vektora $b=(b,0,0)$ és $b=(−b,0,0)$</p>
+<p><img src="../images/diszlokaciofeladat1.png" width="200px">
+Volterra meghatározta az éldiszlokáció körül kialakuló feszültségtenzor alakját
+$\begin{align} \mul{\underline{\sigma}} =  \begin{pmatrix} \sigma_{xx} &amp; \sigma_{xy} &amp; 0\\ \sigma_{yx} &amp; \sigma_{yy} &amp; 0 \\ 0 &amp; 0 &amp; \sigma_{zz} \end{pmatrix},  \end{align}$
+$\sigma_{xx} = \frac{\mu b}{2\pi (1-\nu)}\frac{y(3x^2+y^2)}{(x^2+y^2)^2}$</p>
+<p>$\sigma_{xy} = \sigma_{yx} = \frac{\mu b}{2\pi (1-\nu)}\frac{y(x^2-y^2)}{(x^2+y^2)^2}$</p>
+<p>$l$ a diszlokáció irányvektora, ami a z-tengellyel párhuzamos $\mul{e}_l = (0,0,1)$</p>
 
 </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="23b9d9b0-48de-41fe-ada9-b9f5cd26ec73"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#23b9d9b0-48de-41fe-ada9-b9f5cd26ec73');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "9858fe0cb2e1488d96a34112e661f037", "version_major": 2, "version_minor": 0}
-</script>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
-
-</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\mul{F} = \mul{l}\times(\mul{\underline{\sigma}}\mul{b}) = \begin{pmatrix} 0 \\ 0 \\ 1\end{pmatrix}\times \begin{pmatrix} \sigma_{xx} &amp; \sigma_{xy} &amp; 0\\ \sigma_{yx} &amp; \sigma_{yy} &amp; 0 \\ 0 &amp; 0 &amp; \sigma_{zz} \end{pmatrix} \begin{pmatrix} -b \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1\end{pmatrix}\times\begin{pmatrix} -b\sigma_{xx} \\ -b\sigma{yx} \\ 0\end{pmatrix}=\begin{pmatrix} b\sigma_{yx} \\ -b\sigma_{xx} \\ 0\end{pmatrix}$</p>
 
 </div>
 </div>
-
 </div>
 </div>
 </div>
