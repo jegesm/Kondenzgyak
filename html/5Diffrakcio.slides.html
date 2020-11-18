@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>2Gyakorlathoz slides</title>
+<title>5Diffrakcio slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11905,12 +11905,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Krist&#225;lyos-szerkezet">Krist&#225;lyos szerkezet<a class="anchor-link" href="#Krist&#225;lyos-szerkezet">&#182;</a></h3><p>(Ismétlés)</p>
-<p><strong>Bravais-rács</strong>:</p>
-<p>$\mathbf{R}_n=n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3$, ahol $n_1$, $n_2$, $n_3 \in \mathbb{Z}$</p>
-<p><strong>Bázis</strong>: N db atom</p>
-<p><strong>Elemi cella</strong></p>
-<p><strong>Bravais cella</strong></p>
+<h3 id="R&#246;ntgen-diffrakci&#243;s-m&#233;r&#233;si-m&#243;dszerek:">R&#246;ntgen diffrakci&#243;s m&#233;r&#233;si m&#243;dszerek:<a class="anchor-link" href="#R&#246;ntgen-diffrakci&#243;s-m&#233;r&#233;si-m&#243;dszerek:">&#182;</a></h3><ul>
+<li>Laue-módszer: nem monokromatikus nyalábbal vizsgáljuk</li>
+<li>Minta forgatása: pontok jelennek meg az egyes kristálysíkokban</li>
+<li>Pordiffrakció: koncentrikus körívek jelennek meg az ernyőn</li>
+</ul>
+<p>Ábrázoljuk Ewald gömbbel!</p>
 
 </div>
 </div>
@@ -11919,32 +11919,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$\mathbf{a_1}$, $\mathbf{a_2}$, $\mathbf{a_3}$ elemi rácsvektorok átírva $\mathbf{\hat{x}}$, $\mathbf{\hat{y}}$, $\mathbf{\hat{z}}$ egységvektorok által kifeszített derékszögű koordináta-rendszerben:
-$ a_i= a_{ix}\mathbf{\hat{x}} + a_{iy}\mathbf{\hat{y}} + a_{iz}\mathbf{\hat{z}}$
-<img src="../images/2coordsys.png" width="300"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$ a_i= a_{ix}\mathbf{\hat{x}} + a_{iy}\mathbf{\hat{y}} + a_{iz}\mathbf{\hat{z}}$
-$\begin{align} a_i =  \begin{pmatrix} a_{ix}\\a_{iy} \\ a_{iz} \end{pmatrix}  \end{align}$ 
-$\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp; a_{2y} &amp; a_{3y} \\ a_{1z} &amp; a_{2z} &amp; a_{3z} \end{pmatrix}  \end{align}$</p>
-<h3 id="Az-elemi-cella-t&#233;rfogata">Az elemi cella t&#233;rfogata<a class="anchor-link" href="#Az-elemi-cella-t&#233;rfogata">&#182;</a></h3><p>$V = \mathbf{a_1} \cdot (\mathbf{a_2}\times \mathbf{a_3)}$</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp; a_{2y} &amp; a_{3y} \\ a_{1z} &amp; a_{2z} &amp; a_{3z} \end{pmatrix}\end{align}$</p>
-<p>$\mathbf{R}_n=n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3$</p>
-<p>$\mathbf{R}_n=n_1 \begin{pmatrix} a_{1x}\\a_{1y} \\ a_{1z} \end{pmatrix} + n_2\begin{pmatrix} a_{2x}\\a_{2y} \\ a_{2z} \end{pmatrix} + n_3\begin{pmatrix} a_{3x}\\a_{3y} \\ a_{3z} \end{pmatrix} = A\cdot \begin{pmatrix} n_{1}\\n_{2} \\ n_{3} \end{pmatrix}$</p>
+<p>Olyan irányokban várunk intenzitáscsúcsokat, amelyekben
+$$\underbrace{k_o-k_i=\mul{g}_{hkl}}_\text{Laue-feltétel} \leftarrow h\mul{b}_1 + k\mul{b}_2 + l\mul{b}_3$$</p>
 
 </div>
 </div>
@@ -11953,13 +11929,8 @@ $\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reciprok-r&#225;cs">Reciprok r&#225;cs<a class="anchor-link" href="#Reciprok-r&#225;cs">&#182;</a></h2><p>Az $A$ mátrixhoz definiálunk egy $B$ mátrixot úgy, hogy $BA = AB = 2\pi I$. Ekkor $B$ a reciproktérbeli elemi rácsvektorokat tartalmazza.</p>
-<p>$\begin{align} B =  \begin{pmatrix} b_{1x} &amp; b_{1y}&amp; b_{1z}\\b_{2x} &amp; b_{2y} &amp; b_{2z} \\ b_{3x} &amp; b_{3y} &amp; b_{3z} \end{pmatrix}\end{align}$ $\begin{align} A =  \begin{pmatrix} a_{1x} &amp; a_{2x}&amp; a_{3x}\\a_{1y} &amp; a_{2y} &amp; a_{3y} \\ a_{1z} &amp; a_{2z} &amp; a_{3z} \end{pmatrix}\end{align}$</p>
-<p>A definícióból következik:
-$\mathbf{a}_i \mathbf{b}_i = 2\pi\delta_ij$</p>
-<p>Egy reciprok rács: $\mathbf{G}=h_1\mathbf{b}_1 + h_2\mathbf{b}_2 + h_3\mathbf{b}_3$, ahol $h_1$, $h_2$, $h_3 \in \mathbb{Z}$</p>
-<p>$b_i$ reciproktérbeli rácsvektor merőleges két elemi rácsvektorra:
-$$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}_2\times\mathbf{a}_3)}$$</p>
+<h2 id="Laue-m&#243;dszer">Laue-m&#243;dszer<a class="anchor-link" href="#Laue-m&#243;dszer">&#182;</a></h2><p>$k_{min} &lt; k_i &lt; k_{max}$</p>
+<p><img src="../images/ewald-Laue.png" width="330em"></p>
 
 </div>
 </div>
@@ -11968,18 +11939,7 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">Sz&#225;moljuk ki a graf&#233;n reciprokr&#225;cs vektorait!<a class="anchor-link" href="#Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">&#182;</a></h3><p>$\begin{align} A =  \begin{pmatrix} \frac{\sqrt{3}}{2} &amp; -\frac{\sqrt{3}}{2} \\  \frac{3}{2} &amp; \frac{3}{2}  \end{pmatrix} a_0\end{align}$</p>
-<p><img src="../images/2graphbrilfel.png" width="400"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">Sz&#225;moljuk ki a graf&#233;n reciprokr&#225;cs vektorait!<a class="anchor-link" href="#Sz&#225;moljuk-ki-a-graf&#233;n-reciprokr&#225;cs-vektorait!">&#182;</a></h3><p>$\begin{align} A =  a_0 \begin{pmatrix} \frac{\sqrt{3}}{2} &amp; -\frac{\sqrt{3}}{2} \\  \frac{3}{2} &amp; \frac{3}{2}  \end{pmatrix}\end{align}$ $\begin{align} B =  \frac{2\pi}{a_0}\begin{pmatrix} \frac{2\pi}{\sqrt{3}} &amp; \frac{2\pi}{3} \\  -\frac{2\pi}{\sqrt{3}} &amp; \frac{2\pi}{3}  \end{pmatrix}\end{align}$ 
-<img src="../images/2graphbril.png" width="700"></p>
+<h2 id="Forg&#243;-krist&#225;ly-m&#243;dszer">Forg&#243; krist&#225;ly m&#243;dszer<a class="anchor-link" href="#Forg&#243;-krist&#225;ly-m&#243;dszer">&#182;</a></h2><p><img src="../images/ewald-rotatecrystal.png" width="730em"></p>
 
 </div>
 </div>
@@ -11988,16 +11948,7 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="A-reciprokt&#233;r-Wigner-Seitz-cell&#225;ja-a-Brillouin-cella">A reciprokt&#233;r <strong>Wigner Seitz</strong> cell&#225;ja a <strong>Brillouin</strong> cella<a class="anchor-link" href="#A-reciprokt&#233;r-Wigner-Seitz-cell&#225;ja-a-Brillouin-cella">&#182;</a></h2>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Számoljuk ki az egyszerű köbös rács reciprokrács vektorait!</strong>
-<img src="../images/simple_cubic_lattice.png" width="800"></p>
+<h2 id="Pordiffrakci&#243;">Pordiffrakci&#243;<a class="anchor-link" href="#Pordiffrakci&#243;">&#182;</a></h2><p><img src="../images/DebyeScherrer.png" width="330em"></p>
 
 </div>
 </div>
@@ -12006,26 +11957,203 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Számoljuk ki az BCC rács reciprokrács vektorait!</strong></p>
-<p><img src="../images/body-centered_cubic_lattice.png" width="800"></p>
+<h3 id="Debye-Scherrer-gy&#369;r&#369;k">Debye-Scherrer gy&#369;r&#369;k<a class="anchor-link" href="#Debye-Scherrer-gy&#369;r&#369;k">&#182;</a></h3><p><img src="../images/fff377_w.jpg" width="500"></p>
 
 </div>
 </div>
 </div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/bragg.html">http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/bragg.html</a></p>
+<p><img src="../images/Bragglaw.gif"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A Bragg-egyenlet és a <em>Laue</em>-feltétel ekvivalensek
+$$2|\mul{k}_i|\sin\theta = |\mul{g}_{hkl}|$$
+$$\sin\theta = \frac{|\mul{g}_{hkl}|}{2|\mul{k}_i|}=\frac{|\mul{g}_{hkl}| \lambda}{4\pi}$$</p>
+<p>A távolság két kristálysík között: $d_{hkl}=\frac{2\pi}{|\mul{g}_{hkl}|}$ --&gt; $|\mul{g}_{hkl}| = \frac{2\pi}{d_{hkl}}$
+$$2\sin\theta = \frac{\lambda}{d_{hkl}} \rightarrow 2d_{hkl}\sin\theta =\lambda$$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="SC-eset&#233;n">SC eset&#233;n<a class="anchor-link" href="#SC-eset&#233;n">&#182;</a></h3><p>$$d_{hkl}=\frac{a}{\sqrt{h^2 + k^2 + l^2}}$$</p>
+<p>$N=h^2+k^2+l^2$</p>
+<p>$$\sin\theta =\frac{\lambda\sqrt{N}}{2a}$$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/formfaktor-pelda1.png" width="200em"></p>
+<p>$\mul{a}_1=a(\mul{e}_x,0,0) \hphantom{csdf} \mul{a}_2=a(0,\mul{e}_y,0) \hphantom{csdf} \mul{a}_3=a(0,0,\mul{e}_z)$</p>
+<p>$\mul{b}_1=\frac{2\pi}{a}(\mul{e}_x,0,0) \hphantom{csdf} \mul{b}_2=\frac{2\pi}{a}(0,\mul{e}_y,0) \hphantom{csdf} \mul{b}_3=\frac{2\pi}{a}(0,0,\mul{e}_z)$</p>
+<p>$\mul{r}_1=a(0,0,0) \hphantom{csdf} \mul{r}_2=\frac{a}{2}(0,\mul{e}_y,0) \hphantom{csdf} \mul{r}_3=\frac{a}{2}(0,0,\mul{e}_z)$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$S(\mul{\kappa}) = 1 + \exp^{i\pi k} + \exp^{i\pi l}$</p>
+<ul>
+<li>h értéke teljesen mindegy, mivel nem szerepel $S(\mul{\kappa})$-ban</li>
+<li>$|S_r|^2$ = a relatív intenzitás</li>
+</ul>
+<table>
+<thead><tr>
+<th>N</th>
+<th style="text-align:center">k</th>
+<th style="text-align:center">l</th>
+<th>$</th>
+<th>S</th>
+<th>^2$</th>
+<th>$</th>
+<th>S_r</th>
+<th>^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td>1</td>
+<td>$\frac{1}{9}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td>1</td>
+<td>$\frac{1}{9}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td>1</td>
+<td>$\frac{1}{9}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td>1</td>
+<td>$\frac{1}{9}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td>1</td>
+<td>$\frac{1}{9}$</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+<td>9</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>A $h,k,l=0$ eset nem érdekes, mivel a nullad rendű nyaláb sokkal intenzívebb</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A fenti kristályos anyagot elporítjuk, és a szerkezetét pordiffrakciós elrendezésben vizsgáljuk. A beeső röntgensugárzás hullámhossza $\lambda= 8\times10^{-11}m$, és a diffraktogramon az első (azaz legkisebb $2\theta$-hoz tartozó) Debye-Scherrer gyűrűt $2\theta = 23.0^\circ$-os szögnél láthatjuk. (Itt $2\theta$ szokásosan a szóródott és a beeső sugárzás hullámszámvektorai által bezárt szög.) Mekkora az $a$ rácsparaméter értéke?
+$$\sin{\theta}=\frac{\lambda\sqrt{N}}{2a}$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Feladat">Feladat<a class="anchor-link" href="#Feladat">&#182;</a></h3><p>NaCl kristály</p>
+<ul>
+<li>Röntgen forrás: $\lambda= 0.154$</li>
+<li>Ernyő rávolsága, $R=2.877$ cm</li>
+<li>NaCl moláris tömege 58.44 g</li>
+<li>A kristályminta sűrűsége 2.165 $g/cm^3$</li>
+<li>Az elemi cella 4 db NaCl molekulát tartalmaz</li>
+<li>Az Avogadro szám $6.022\times 10^{23}$</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
-<span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="k">import</span> <span class="n">det</span>
-<span class="kn">import</span> <span class="nn">scipy.linalg</span> <span class="k">as</span> <span class="nn">lin</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">V</span><span class="o">=</span><span class="p">(</span><span class="mf">58.44</span><span class="o">/</span><span class="mf">2.165</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span>  
+<span class="p">(</span><span class="n">V</span><span class="o">/</span><span class="p">(</span><span class="mf">6.022</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="mi">23</span><span class="p">)))</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">A</span> <span class="o">=</span> <span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span><span class="o">/</span><span class="mi">2</span>
-<span class="c1"># A-t transzponálni kell, de a kettő megegyezik</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">lin</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3.5522526899475526e-10</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
 </pre></div>
 
 </div>
@@ -12042,10 +12170,7 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>-0.25
-[[ 1.  1. -1.]
- [ 1. -1.  1.]
- [-1.  1.  1.]]
+<pre>Populating the interactive namespace from numpy and matplotlib
 </pre>
 </div>
 </div>
@@ -12053,23 +12178,16 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 </div>
 </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Kit&#246;lt&#233;si-t&#233;nyez&#337;-(Atomic-packing-factor)">Kit&#246;lt&#233;si t&#233;nyez&#337; (Atomic packing factor)<a class="anchor-link" href="#Kit&#246;lt&#233;si-t&#233;nyez&#337;-(Atomic-packing-factor)">&#182;</a></h2><p>$P=\frac{N_{részecske}V_{részecske}}{V_{cella}}$ <img src="../images/2agyugolyok.jpg" width="250">
-<img src="../images/2ferrero.jpg" width="250"></p>
-
-</div>
-</div>
-</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">interactive</span><span class="p">(</span><span class="n">plot_shift</span><span class="p">,</span> <span class="n">alter</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span><span class="o">=</span><span class="mf">0.154</span>
+<span class="n">N</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<span class="n">th</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">27</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">45</span><span class="p">])</span>
+<span class="n">l</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">th</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -12082,22 +12200,13 @@ $$\mathbf{b}_1=2\pi\frac{\mathbf{a}_2\times\mathbf{a}_3}{\mathbf{a}_1(\mathbf{a}
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[20]:</div>
 
 
 
 
-
- 
- 
-<div id="23b9d9b0-48de-41fe-ada9-b9f5cd26ec73"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#23b9d9b0-48de-41fe-ada9-b9f5cd26ec73');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "9858fe0cb2e1488d96a34112e661f037", "version_major": 2, "version_minor": 0}
-</script>
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 0.28565123,  0.27111211,  0.2845549 ])</pre>
 </div>
 
 </div>
